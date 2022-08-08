@@ -15,9 +15,14 @@ import java.time.LocalDateTime;
 public class Post implements Serializable {
     private static final long serialVersionUID = 1L;
     /**
+     * 帖子id
+     */
+    private Integer id;
+
+    /**
      * 类别id
      */
-    private Long id;
+    private Integer category;
 
     /**
      * 审核状态
@@ -39,6 +44,6 @@ public class Post implements Serializable {
      * 创建人
      */
     @TableField(fill = FieldFill.INSERT)
-    private Long createUser;
+    private Integer createUser;
 
 }

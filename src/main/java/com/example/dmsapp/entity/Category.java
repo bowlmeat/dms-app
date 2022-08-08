@@ -16,7 +16,7 @@ public class Category implements Serializable {
     /**
      * 类别id
      */
-    private Long id;
+    private Integer id;
 
     /**
      * 分类名称
@@ -42,10 +42,10 @@ public class Category implements Serializable {
      * 创建人
      */
     @TableField(fill = FieldFill.INSERT)
-    private Long createUser;
+    private Integer createUser;
     /**
      * 修改人
      */
     @TableField(fill = FieldFill.INSERT_UPDATE)
-    private Long updateUser;
+    private Integer updateUser;
 }

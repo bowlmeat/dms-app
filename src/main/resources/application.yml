@@ -1,8 +1,8 @@
 server:
-  port: 8080
+  port: 8081
 spring:
   application:
-    name: drive_takeout
+    name: dms-app
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://150.158.82.164:3306/drive?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublickeyRetrieval=true
@@ -24,5 +24,4 @@ mybatis-plus:
   global-config:
     db_config:
       id-type: ASSIGN_ID
-reggie:
-  path: D:\
+

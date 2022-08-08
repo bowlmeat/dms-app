@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DmsAppApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(DmsAppApplication.class, args);
     }
 

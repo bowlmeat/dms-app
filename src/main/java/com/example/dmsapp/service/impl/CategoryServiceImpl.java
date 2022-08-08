@@ -4,24 +4,20 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.example.dmsapp.common.CustomException;
 import com.example.dmsapp.entity.Category;
-import com.example.dmsapp.entity.Dish;
-import com.example.dmsapp.entity.SetMeal;
 import com.example.dmsapp.mapper.CategoryMapper;
 import com.example.dmsapp.service.CategoryService;
-import com.example.dmsapp.service.DishService;
-import com.example.dmsapp.service.SetMealService;
 import org.springframework.stereotype.Service;
 
 @Service
 public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> implements CategoryService {
 
-    private DishService dishService;
-    private SetMealService setMealService;
+    /*private DishService dishService;
+    private SetMealService setMealService;*/
 
     /**
      * 根据id删除分类，删除之前需要进行判断
      */
-    @Override
+    /*@Override
     public void remove(Long id) {
         LambdaQueryWrapper<Dish> dishLambdaQueryWrapper = new LambdaQueryWrapper<>();
         //添加查询条件，根据分类id进行查询
@@ -46,7 +42,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
         }
         //正常删除分类
         super.removeById(id);
-    }
+    }*/
 
 
 

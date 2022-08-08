@@ -18,8 +18,6 @@ public class CategoryController {
 
     @Autowired
     private CategoryService categoryService;
-
-
     /**
      * 新增分类
      */
@@ -75,7 +73,7 @@ public class CategoryController {
     /**
      * 根据条件查询分类数据
      */
-    @GetMapping("/list")
+    /*@GetMapping("/list")
     public R<List<Category>> list(Category category) {
         //条件构造器
         LambdaQueryWrapper<Category> queryWrapper = new LambdaQueryWrapper<>();
@@ -86,6 +84,6 @@ public class CategoryController {
 
         List<Category> list = categoryService.list(queryWrapper);
         return R.success(list);
-    }
+    }*/
 
 }
